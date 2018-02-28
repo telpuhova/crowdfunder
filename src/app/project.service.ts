@@ -1,23 +1,22 @@
 import { Injectable } from '@angular/core';
 import { Project } from './project.model';
 import { PROJECTS } from './mock-project';
+import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/database';
 
 @Injectable()
 export class ProjectService {
-  projects = PROJECTS;
+  projects: FirebaseListObservable<any[]>;
 
-  constructor() { }
+  constructor(public database: AngularFireDatabase) {
+    this.projects = database.list('projects');
+  }
 
   getProjects() {
     return this.projects;
   }
 
-  getProjectById(id) {//checks name for now
-    for (let i=0; i < this.projects.length; i++) {
-      if (this.projects[i].name === id) {
-        return this.projects[i];
-      }
-    }
+  getProjectById(id: string) {
+    return this.database.object('projects/' + id);
   }
 
 }

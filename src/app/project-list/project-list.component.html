@@ -1,4 +1,10 @@
 <p>Projects: </p>
-<div *ngFor="let project of projects">
+<select (change)='onChange($event.target.value)'>
+  <option value="all" selected="selected">All Projects</option>
+  <option value="games">Games</option>
+  <option value="film">Film</option>
+</select>
+
+<div *ngFor="let project of projects | async | category: filterByCategory">
   <li (click)="goToDetails(project)">{{project.name}}</li>
 </div>

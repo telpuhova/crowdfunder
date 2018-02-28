@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Params } from '@angular/router';
 import { Location } from '@angular/common';
+import { FirebaseListObservable } from 'angularfire2/database';
 
 import { ProjectService } from '../project.service';
 
@@ -11,7 +12,7 @@ import { ProjectService } from '../project.service';
   providers: [ProjectService]
 })
 export class ProjectDetailComponent implements OnInit {
-  projectId: string;//name for now
+  projectId: string;
   project;
 
   constructor(

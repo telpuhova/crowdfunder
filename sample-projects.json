@@ -1,0 +1,28 @@
+{
+  "projects": [
+    {
+      "name": "Violet",
+      "owner": "Michael Shwartz",
+      "description": "An experimental black and white film, with no script, just raw emotioins.",
+      "goal": "100000",
+      "reward": "none",
+      "category": "film"
+    },
+    {
+      "name": "Batman™: Gotham City Chronicles",
+      "owner": "Monolith Board Games LLC",
+      "description": "Fight for Gotham City as the heroes or work alone as the villain in a miniatures boardgame for 2 to 4 players exclusive to Kickstarter.",
+      "goal": "500000",
+      "reward": "copy of Batman™: Gotham City Chronicles",
+      "category": "games"
+    },
+    {
+      "name": "",
+      "owner": "",
+      "description": "",
+      "goal": "",
+      "reward": "",
+      "category": ""
+    }
+  ]
+}
