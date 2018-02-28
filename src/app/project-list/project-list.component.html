@@ -1,0 +1,4 @@
+<p>Projects: </p>
+<div *ngFor="let project of projects">
+  <li (click)="goToDetails(project)">{{project.name}}</li>
+</div>
