@@ -14,6 +14,7 @@ import { ProjectService } from '../project.service';
 export class ProjectDetailComponent implements OnInit {
   projectId: string;
   project;
+  showThanks = false;
 
   constructor(
     private projectService: ProjectService,
@@ -24,6 +25,13 @@ export class ProjectDetailComponent implements OnInit {
   ngOnInit() {
     this.route.params.forEach((urlParameters) => { this.projectId = urlParameters['id'] });
     this.project = this.projectService.getProjectById(this.projectId);
+  }
+
+  makeAPledge(userPledge: string) {
+    let pledge: number = parseInt(userPledge);
+    this.showThanks = true;
+    // console.log(this.project);
+    this.projectService.updatePledged(pledge, this.projectId);
   }
 
 }

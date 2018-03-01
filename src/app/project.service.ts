@@ -19,4 +19,11 @@ export class ProjectService {
     return this.database.object('projects/' + id);
   }
 
+  updatePledged(newPledged, projectId) {
+    let projectEntryInFirebase = this.getProjectById(projectId);
+    projectEntryInFirebase.update({
+      pledged: newPledged
+    });
+  }
+
 }

@@ -23,6 +23,13 @@ export class CategoryPipe implements PipeTransform {
         }
       }
       return output;
+    } else if (desiredCategory === "comics") {
+      for (let i = 0; i < input.length; i++) {
+        if (input[i].category === "comics") {
+          output.push(input[i]);
+        }
+      }
+      return output;
     } else {
       return input;
     }

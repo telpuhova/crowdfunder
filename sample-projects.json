@@ -4,25 +4,46 @@
       "name": "Violet",
       "owner": "Michael Shwartz",
       "description": "An experimental black and white film, with no script, just raw emotioins.",
-      "goal": "100000",
+      "goal": 100000,
       "reward": "none",
-      "category": "film"
+      "category": "film",
+      "pledged": 0
     },
     {
       "name": "Batman™: Gotham City Chronicles",
       "owner": "Monolith Board Games LLC",
       "description": "Fight for Gotham City as the heroes or work alone as the villain in a miniatures boardgame for 2 to 4 players exclusive to Kickstarter.",
-      "goal": "500000",
+      "goal": 500000,
       "reward": "copy of Batman™: Gotham City Chronicles",
-      "category": "games"
+      "category": "games",
+      "pledged": 0
     },
     {
-      "name": "",
-      "owner": "",
-      "description": "",
-      "goal": "",
-      "reward": "",
-      "category": ""
+      "name": "Chirault: The Complete Series",
+      "owner": "Ally Rom Colthoff",
+      "description": "Printing the final two volumes of Chirault, an epic fantasy comic series!",
+      "goal": 7829,
+      "reward": "PDF copies of the two new volumes (4 and 5), and my eternal gratitude!",
+      "category": "comics",
+      "pledged": 0
+    },
+    {
+      "name": "BACK Book 2",
+      "owner": "KC Green",
+      "description": "The second volume of BACK, a weird western webcomic by Anthony Clark (Nedroid Picture Diary, Beartato) and KC Green (Gunshow).",
+      "goal": 20000,
+      "reward": "Both PDFs for your e-reading pleasure.",
+      "category": "comics",
+      "pledged": 0
+    },
+    {
+      "name": "Only Roundup Remains - a documentary film",
+      "owner": "brian",
+      "description": "Eight cowboys round up cattle from 50,000 acres of Montana forest. This is the documentation of a 115-yr-old dying American tradition.",
+      "goal": 30000,
+      "reward": "SEE THE FILM FIRST!",
+      "category": "film",
+      "pledged": 0
     }
   ]
 }

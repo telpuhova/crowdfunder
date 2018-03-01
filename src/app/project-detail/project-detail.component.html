@@ -1,8 +1,14 @@
 <p>project:</p>
 <div *ngIf="project">
   <h3>{{(project | async)?.name}}</h3>
-  <p>{{(project | async)?.owner}}</p>
-  <p>{{(project | async)?.description}}</p>
-  <p>{{(project | async)?.goal}}</p>
-  <p>{{(project | async)?.reward}}</p>
+  <p><strong>by</strong> {{(project | async)?.owner}}</p>
+  <p><strong>description:</strong> {{(project | async)?.description}}</p>
+  <p><strong>goal:</strong> {{(project | async)?.goal}}</p>
+  <p><strong>reward:</strong> {{(project | async)?.reward}}</p>
+  <p><strong>category:</strong> {{(project | async)?.category}}</p>
+  <p><strong>pledged:</strong> {{(project | async)?.pledged}}</p>
+  <br>
+  <input #pledge>
+  <button (click)="makeAPledge(pledge.value)">make a pledge</button>
+  <p *ngIf="showThanks">you've just made a pledge {{pledge.value}}$</p>
 </div>

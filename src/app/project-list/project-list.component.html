@@ -3,7 +3,10 @@
   <option value="all" selected="selected">All Projects</option>
   <option value="games">Games</option>
   <option value="film">Film</option>
+  <option value="comics">Comics</option>
 </select>
+
+<hr>
 
 <div *ngFor="let project of projects | async | category: filterByCategory">
   <li (click)="goToDetails(project)">{{project.name}}</li>
