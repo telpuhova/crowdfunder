@@ -1,32 +1,36 @@
-# CrowdfundingPlatform
+# crowdfunder
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.5.
 
+written using Angular 2, 2/28/2018
+
 **By Natalia Telpukhova**
 
-## Development server
+## Description
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+An application, that copies the behavior of a crowdfunding platforms like kickstarter and others.
 
-## Code scaffolding
+## Status
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+still in progress
 
-## Build
+## Setup
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+* clone repository
+```
+$ git clone https://github.com/telpuhova/crowdfunder.git
+```
+* go into the cloned repo and run the following commands from your terminal:
+```
+$ npm install
+$ bower install
+$ gulp build --production
+$ gulp serve
+```
 
-## Running unit tests
+## Technologies Used
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+TypeScript, Angular 2, HTML, CSS, JavaScript, Node, npm, Gulp, Bootstrap, jQuery
 
 ### License
 
